@@ -1,0 +1,5 @@
+Bill breakdown:
+Golang Book 1:            ...R1000
+Golang Mastery Book:      ...R1250
+tip:                      ...R200
+total:                    ...R2450.00
