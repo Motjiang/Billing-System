@@ -1,48 +1,22 @@
 # 🧾 Golang CLI Billing System
 
-A beginner-friendly, file-based billing system built in **Go**. This project was developed as part of my Golang learning journey to understand how to structure Go applications, work with files, use custom types, and interact with users via the command line.
+A clean, beginner-friendly **Command Line Billing System** built in **Golang**. This project was developed as part of my journey to learn Go and understand how to work with structs, maps, pointers, user input, file writing, and more.
 
 ---
 
-## 💡 Description
+## 📌 Description
 
-This CLI application allows a user to generate a bill by:
-
-1. Entering their name (used as the bill filename)
-2. Choosing from three options:
-   - `a` — Add an item (with name and price)
-   - `t` — Add a tip
-   - `s` — Save the bill to a file
-
-Once saved, a `.txt` file is created inside the `bills/` folder using the customer name (e.g., `john.txt`) and contains all items, tip, and the total.
+This CLI program allows a user to generate a bill by entering items and prices, adding a tip, and saving the final bill to a text file inside a `bills/` folder. The file is named using the customer's name and contains a formatted breakdown of all bill items, tip, and the total.
 
 ---
 
-## 🗂️ Project Structure
+## 🧠 What I Learned
 
-├── main.go # Handles program flow and user input
-├── bill.go # Contains the Bill struct and related methods
-└── bills/ # Stores generated bill text files
+- ✅ Go Structs and custom types
+- ✅ Receiver functions (methods on structs)
+- ✅ Pointers and pass-by-value concepts
+- ✅ Reading user input from the terminal
+- ✅ File writing using `os.WriteFile`
+- ✅ Formatting strings with `fmt.Sprintf`
+- ✅ Building simple but useful CLI tools
 
----
-
-## ✨ Features
-
-- CLI-based interaction
-- Create itemized bills with prices
-- Add optional tips
-- Save bill to a text file
-- Use of Go structs, receiver methods, and file I/O
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- [Go](https://go.dev/doc/install) installed on your machine
-
-### Run the program
-
-```bash
-go run main.go
